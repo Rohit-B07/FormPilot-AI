@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #F3F1EC;
+    --primary-black: #0A0A0A;
+    --deep-charcoal: #171717;
+    --secondary-gray: #666666;
+    --light-gray: #D8D6D0;
+    --white: #FFFFFF;
+    --accent-blue: #1677FF;
+  }
+
+  body {
+    background-color: #F3F1EC;
+    color: #0A0A0A;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-editorial {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-serif-editorial {
+  font-family: 'Instrument Serif', serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom subtle noise background */
+.bg-cream {
+  background-color: #F3F1EC;
+}
+
+.bg-charcoal {
+  background-color: #171717;
+}
+
+.bg-primary-black {
+  background-color: #0A0A0A;
+}
+
+.border-thin {
+  border-color: rgba(10, 10, 10, 0.15);
+}
+
+.border-thin-dark {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F1EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #171717;
+}
+
+/* Pulse glow for status */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.1); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
